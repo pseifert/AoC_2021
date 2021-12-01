@@ -16,6 +16,7 @@ def get_depth_increase():
     input_task_1 = get_task_input()
     print([y > x for x, y in create_comparison_pairs(input_task_1)].count(True))
 
+
 def get_depth_window_increase():
     print("Task 2")
     input_task_1 = get_task_input()
