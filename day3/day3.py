@@ -52,7 +52,7 @@ def get_co2_generator_rating(codes):
         else:
             indices = [index for index, bit in enumerate(bits) if bit == "1"]
             final_code = [final_code[index] for index in indices]
-    final_code = final_code[0]
+    final_code = final_code[0][:-1]
     co2 = int("".join(final_code), 2)
     print(f"co2: {final_code} = {co2}")
     return co2
